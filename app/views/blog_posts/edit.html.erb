@@ -1,4 +1,4 @@
-<%= render partial: 'form', locals: {blog_post: @blog_post} %>
+<%= render partial: 'form', locals: {blog_post: @blog_post}, data: {turbo_confirm: "Update this post!"} %>
 
 <%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Delete this post!"} %>
 
